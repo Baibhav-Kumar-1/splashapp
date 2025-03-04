@@ -1,0 +1,48 @@
+name: splashapp
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+  mongo_dart: ^0.9.1
+  local_auth: ^2.1.8
+  shared_preferences: ^2.2.2
+  crypto: ^3.0.3
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_native_splash:
+  color: "#d4e4ed"
+  android: true
+  ios: true
+  web: false
+  background_image: "assets/background.png"
+  image: "assets/logo.png"
+  branding: "assets/branding.png"
+
+  android_12:
+    color: "#d4e4ed"
+    image: "assets/android_logo.png"
+    branding: "assets/android_branding.png"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/stxicon.png"
+  adaptive_icon_foreground: "assets/stxicon.png"
+  adaptive_icon_background: "#00000000"
+  adaptive_icon_monochrome: "assets/stxicon.png"
